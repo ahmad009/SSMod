@@ -1,7 +1,9 @@
 # SSMod
 Split Second Velocity All Cars &amp; DLC Unlocker :D
 
-its very easy:
+works with reloaded crack version.
+
+usage:(its very easy)
 
 1:compile it
 
