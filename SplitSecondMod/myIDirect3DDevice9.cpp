@@ -122,13 +122,13 @@ HRESULT myIDirect3DDevice9::GetSwapChain(UINT iSwapChain,IDirect3DSwapChain9** p
 	// We only cover swap chain 0
 	if (iSwapChain != 0)
 	{
-		MessageBoxA(NULL, "Swap chain is not 0.", "Information", MB_OK );
+		MessageBox(NULL, "Swap chain is not 0.", "Information", MB_OK );
 		return(m_pIDirect3DDevice9->GetSwapChain(iSwapChain, pSwapChain));
 	}
 	
 	if (gl_pmyIDirect3DSwapChain9)
 	{
-		MessageBoxA(NULL, "YAY: gl_pmyIDirect3DSwapChain9 is true.", "Information", MB_OK );
+		MessageBox(NULL, "YAY: gl_pmyIDirect3DSwapChain9 is true.", "Information", MB_OK );
 		*pSwapChain = gl_pmyIDirect3DSwapChain9;
         return(D3D_OK);
 	}

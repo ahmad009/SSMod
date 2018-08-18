@@ -4,6 +4,8 @@
 
 #include "StdInc.h"
 
+void Sys_RunInit();
+
 static BYTE originalCode[5];
 static PBYTE originalEP = 0;
 
@@ -19,7 +21,6 @@ void Main_UnprotectModule(HMODULE hMod)
 void Main_DoInit()
 {
 	Sys_RunInit();
-
 
 	memcpy(originalEP, &originalCode, sizeof(originalCode));
 

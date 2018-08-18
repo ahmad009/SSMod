@@ -29,7 +29,7 @@ void LoadOriginalDll(void)
 	// Debug
 	if (!gl_hOriginalDll)
 	{
-		MessageBoxA(NULL, "Original d3d9.dll not loaded.", "Error", MB_OK);
+		MessageBox(NULL, "Original d3d9.dll not loaded.", "Error", MB_OK);
 		TerminateProcess(GetCurrentProcess(), 0);
 	}
 }
@@ -46,7 +46,7 @@ IDirect3D9* WINAPI Direct3DCreate9(UINT SDKVersion)
     // Debug
 	if (!D3DCreate9_fn) 
     {
-		MessageBoxA(NULL, "Pointer to original Direct3DCreate9 function not recieved.", "Error", MB_OK);
+		MessageBox(NULL, "Pointer to original Direct3DCreate9 function not recieved.", "Error", MB_OK);
         TerminateProcess(GetCurrentProcess(), 0);
     }
 	
