@@ -8,3 +8,6 @@ works with reloaded crack version.
 2:copy compiled d3d9.dll to your split second velocity main folder
 
 3:launch the game and you will see all cars are unlocked!
+
+
+Download: https://github.com/ahmad009/SSMod/blob/master/Compiled.rar
